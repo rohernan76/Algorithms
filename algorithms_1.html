@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Algorithm  - Problem #1</title>
+</head>
+<body>
+
+<!-- <p>"Hello World" spelled backwards looks like this:</p>
+
+<p id="reverseString"></p> -->
+
+	<script>
+/* Given a string, for example, “Hello World”, write some code to reverse that string (“dlroW olleH”).
+
+(Hint: try using the Array.reverse() method! But, if you do, try solving it just using looping as well). */
+
+	// var helloWorld = ["Hello", "World"];
+
+	// helloWorld.reverse();
+
+	// 	console.log(helloWorld);	
+
+
+	// var helloWorld = ("Hello World");
+
+	// var h = helloWorld.split("");
+
+	// 	console.log(h);
+
+//  Option 1
+	// var a = "Hello World".split("");
+	// var b = " ";
+
+	// for (var i = 0; i < a.length; i++) {
+	// 	a = a.reverse(); or maybe use a = helloWorld.reverse();
+	// 	b += a[i];
+	// }
+
+// Option 2
+
+	// var a = "Hello World".split("");
+	// var b = [];
+
+	// for(var i = a.length; i <= a.length;i--) {
+	// 	b.push(a[i])
+
+	// }
+
+// Option 2
+
+	// var a = "Hello World".split("").reverse();
+	// var b = [];
+
+	// for(var i = 0; i < a.length;i++) {
+	// 	b.push(a[i]);
+	// }
+	// b=b.join()
+	
+	// console.log(b);
+
+	// document.getElementById("reverseString").innerHTML = b;
+
+/* Erty's approach: */
+
+	//OPTION #1
+	// var str = prompt("What is the string?");
+
+	// var splitStr = str.split("");
+
+	// console.log(splitStr);
+
+		/* or */
+
+	//OPTION #2
+	// var str = prompt("What is the string?");
+
+	// var splitStr = str.split("");
+
+	// splitStr.reverse();
+
+	// var reversed = splitStr.join("");
+
+	// console.log(reversed);
+
+// Notes: strings are an immutable data structure. Numbers, boolean are mutable. 
+
+/* While loop */
+
+	var str = prompt("What is the string?");
+
+	var splitStr = str.split("");
+
+	var reversed = [];
+
+	var index = splitStr.length - 1;
+
+	while(index >= 0) {
+		reversed.push(splitStr[index]);
+		index -= 1;
+	}
+
+	console.log(reversed.join(""));
+
+
+	</script>
+</body>
+</html>

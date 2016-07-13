@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding up an array</title>
+</head>
+<body>
+
+<script>
+	
+var sum = 0; //keep track of the sum so far
+var index = 0; //keep track of where we are
+var nums = [3, 5, 7, 9, 11, 13]; //the data to sum
+
+/*
+While there are still numbers to sum
+Add the next number in the array to sum
+Look at the next number in the array
+*/
+while (index < nums.length) {
+    sum = sum + nums[index];
+    index = index + 1;
+}
+console.log(sum);
+
+
+
+</script>
+</body>
+</html>

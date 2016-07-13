@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test "pass by value"</title>
+</head>
+<body>
+
+<script>
+
+// var items = [];
+// var fib = items;
+
+// fib[0] = 0;
+// fib[1] = 1;
+
+// console.log(items);
+// document.write(items);
+
+var fib = [];
+var nums = [];
+fib[0] = 1;
+fib[1] = 2;
+var sum = 0;
+var index = 0;
+var b = [];
+
+for(i = 2; i <= 10; i++) {
+	fib[i] = fib[i-2] + fib [i-1];
+}
+    		if (fib % 2 == 0) {
+   			while (index < fib.length) 
+			    sum = sum + fib[i];
+			    index = index + 1;
+   			} else {
+   			b.push(fib);
+   			}
+   		
+   		// document.write(fib);
+   		console.log(index);
+
+	// if (i % 3 && i % 5 !=0) {
+ //  			b.push(i); 
+ //  		} else {
+ //  			if (i % 3 == 0) {
+ //  			arr.push(i);
+ //  		} 
+ //  			if (i % 5 == 0) {
+ //  			arr.push(i);
+ //  		}
+ //  		}
+ //  		while (index < arr.length) {
+ //  			sum = sum + arr[index];
+ //  			index = index + 1;
+ //  		}
+ //  	}
+
+
+</script>
+</body>
+</html>

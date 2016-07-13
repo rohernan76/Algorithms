@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEST Fibonacci sequence</title>
+</head>
+<body>
+
+
+	<script>
+
+// var arr = [];
+// var index = 0;
+// var sum = 0;
+
+// for(var i = 0; i < 8; i++) {
+// 	sum = sum[i++]
+// }
+// ;
+
+// var arr = [];// create list from 0 to 5
+// var b = []
+// var index = 0;
+// var sum = 0;
+// var fibo = 0;
+
+// for(var i=0;i<5;i++) {
+// 	// document.write(i); 
+//   	var b = i+1;
+//   	arr.push(b);
+//   	// console.log(b);
+//   	// while (index < b.length) {
+//   	// 	sum = sum + b[index];
+//   	// 	index = index + 1;
+//   	// }
+// }
+
+// 	var fibo = arr[0]+arr[1];
+// 	i += arr[0][[1];
+
+// 	console.log(fibo);
+// 	console.log(i);
+
+
+var fib = []; // Initialize array!
+var nums = [];
+var sum = 0;
+
+fib[0] = 0;
+fib[1] = 1;
+
+	for(var i=2; i<=10; i++) {
+    // Next fibonacci number = previous + one before previous
+    fib[i] = fib[i-2] + fib[i-1];
+    console.log(fib[i]);
+      
+}
+
+  for(var i = 0; i<fib.length; i++) {
+    if (fib[i] % 2 == 0) {
+        nums.push(fib[i]); 
+    }
+  }
+
+  for (var i=0; i < nums.length; i++) {
+      sum = sum + nums[i];
+  		console.log(sum);
+  }
+  
+	</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guessing game</title>
+</head>
+<body>
+
+	<script>
+
+var min = 0;
+var max = 101;
+
+var won = false;
+
+while(!won) {
+
+// until we have won, 
+
+//  Guess a number between 0 and 100. 
+var guess = Math.floor((max + min) / 2);
+//ask the user if the number is too high or too low
+var validResponse = false;
+while(!validResponse) {
+	var response = prompt("Is " + guess + " High or Low?").toUpperCase();
+	if (response == "H" || response == "L" || response == "Y") {
+		validResponse = true;
+	}
+}
+if (max == 0 || min == 101) {
+	won = true;
+	prompt("Hey, it's supposed to be bewtween 1 and 100!")
+}
+//if the # is too high, update max to new number. 
+if (response == "High") {
+	max = guess + 1;
+}
+//if the # is too low, update min to new number.
+else if (response == "Low"){
+	min = guess;
+}
+//if we won, hooray!! 
+else {
+	won = true;
+}
+}
+
+
+
+	</script>
+</body>
+</html>
